@@ -1,0 +1,393 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.MainNetflixContainor{
+    visibility: visible;
+}
+
+
+.backgroundiContainor{
+    background-image: url(netflixBannerIMG);
+    /* the line below is very special it wastes my 1 hour  */
+    filter: blur(16px) ;
+    height: 100vh;
+    position: relative;
+}
+
+
+.pinkOverLay{
+    background-color: rgba(104, 3, 20 ,0.404);
+    height: 100%;
+    width: 100%;
+}
+
+.contentContainor{
+    position: absolute;
+    top: 0;
+    background-color: rgba (0, 0, 0, .5);
+     padding: 0rem 2rem;
+
+}
+
+
+body{
+    background-color: black;
+}
+
+
+nav {
+  /* border: 2px solid green; */
+  height: 20vh;
+}
+
+
+.upperNavbarSection {
+  /* border: 2px solid blue; */
+  display: flex;
+  height: 50%;
+}
+
+.netfliLogo{
+     width: 29%;
+     /* color: rgb(255, 0, 0); */
+}
+
+
+.LowerNavbarSection {
+    /* border: 2px solid black; */
+    height: 50%;
+}
+
+
+.upperNavbarLeftSection{
+    /* border: 2px solid red; */
+    width: 50%;
+}
+
+
+.upperNavbarRightSection{
+    /* border: 2px solid green; */
+    width: 50%;
+}
+
+
+.navBarButtonContainor{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 2px solid green; */
+    height: 100%;
+}
+
+
+.languageButton{
+    display: flex;
+    padding: .5rem .8rem ;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.SigninButton{
+    background-color:red;
+    padding: .4rem .8rem ;
+    border-radius: 50px;
+    outline: none;
+    border: 3px solid red;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: white;
+}
+
+.languageButton p{
+    margin-left:5px;
+    
+}
+
+
+
+
+.LowerNavbarSection{
+    /* border: 2px solid red; */
+    height: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.menuList{
+    /* border:2px solid green; */
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 57px;
+    /* box-shadow: 2px 3px57px rgba(0, 0, 0, 0); */
+    box-shadow: 2px 3px 57px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(7px);
+    height: 7vh;
+    /* border: 1px solid cyan; */
+}
+
+.menuList li{
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    align-items:center;
+
+}
+
+.sectionsContainer{
+    margin-top: 20vh;
+}
+
+.bannerSetion{
+    /* border: 2px solid red; */
+    height: 90vh;
+    /* background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/05e91faa-6f6d-4325-934e-5418dcc2567b/web/IN-en-20250630-TRIFECTA-perspective_159086b1-425f-435b-bcd5-1ed8039cdef9_large.jpg); */
+    /* the upper img is took from direct google and copy paasted  */
+    background-image: url(netflixBannerIMG);
+    /* this img is downloaded in  my device */
+    background-size: 100% 100%;
+    border-radius: 20px;
+    /* margin-top: 1rem; */
+    position: relative;
+
+
+}
+
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( rgba(0,0,0,.3),rgba(0,0,0,.7), black );
+    border-radius : 20px;
+}
+
+
+.bannerContainer{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* position: relative; */
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+
+
+
+.bannerContainer h2{
+    font-size: 3.5rem;
+    width: 40%;
+    text-align: center;
+
+}
+
+
+.bannerContainerh4{
+    font-size: 1.5rem;
+    margin: 20px;
+    
+}
+
+
+.bannerContainerp{
+    font-size: 1rem;
+    margin: 20px;
+}
+
+
+.inputContainor{
+    /* border: 2px solid green; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+
+.EmailInputbox{
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 1ox solid white;
+    outline: none;
+    width: 60%;
+    background-color: regb(255, 255, 255, 0.3);
+    color: white;
+    font-size: 1rem;
+}
+
+
+.EmailInputbox::placeholder{
+    columns: white;
+
+}
+
+
+.getstartedButton{
+    width: 30%;
+    background-color: red;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.crousalSection,
+.plansection,
+.reasonTOJoinSection{
+    color: white;
+    
+    /* border: 2px solid red; */
+}
+
+
+.crousalSection h2,
+.plaCard h2,
+.reasonTOJoin h2{
+    /* border: 2px solid red; */
+    margin-left: 5rem;
+    font-size: 1.7rem;
+    
+}
+
+
+
+.CrousalCardContainor,
+.plansConatiner,
+.ReasonsConatiner{
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+    
+}
+
+
+.crousalNUmberContainor {
+    margin-top: 10rem;
+    margin-bottom: 0%;
+    position: absolute;
+    left: -15px;
+}
+
+
+.crousalNUmberContainor span{
+    font-size: 5rem;
+  color: rgba(11, 11, 11, 0.633);
+    -webkit-text-stroke: 0.1rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.464);
+    
+}
+
+
+.CroudalCard{
+    position: relative;
+    width: 15%;
+    height: 33vh;
+    
+    /* border: 2px solid yellow; */
+   
+}
+
+.crousalImageContainor{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.crousalImageContainor img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* .planCardLowerContent{
+    margin-top: 8rem;
+    
+} */
+
+.planCard{
+    /* border: 2px solid green; */
+    height: 38vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem 1rem  ;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.519);
+  
+     
+    /* background:linear-gradient(120deg, #ff0000, #1c1c1c);     */
+}
+
+
+.planCard1{
+    /* background: linear-gradient(120deg, #fc466b, #3f5efb); */
+     background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+}
+
+
+.planCard2{
+    /* background: linear-gradient(120deg, #2bc0e4, #eaecc6); */
+     background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+}
+
+
+.planCard3{
+   /* background: linear-gradient(120deg, #20002c, #cbb4d4); */
+    background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+}
+
+
+.planCard4{
+    background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+
+}
+
+.plancard h2{ 
+    margin-left: 0;
+    font-size: 1.5rem;
+
+
+}
+
+
+.plancard h4{
+    font-size: 1.3rem;
+}
+
+
+.plancard p{
+    font-size: 1rem;   
+}
+
+
+
+
+
+
