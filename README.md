@@ -7,7 +7,7 @@ A professional desktop-only Netflix clone built using **HTML5 and CSS3**, focusi
 🔗 **Live Demo:**  
  
 
-> Ensure GitHub Pages is enabled in the repository settings.
+> https://net2flixclone-vishnupatel.netlify.app//
 
 ---
 
